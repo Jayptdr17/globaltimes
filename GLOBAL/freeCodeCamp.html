@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0a0a22;
+        color: white;
+        width: 100vw;
+        height: 90px;
+    }
+    
+    .s1 {
+        position: relative;
+        right: 270px;
+        width: 32vw;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    h1 {
+        position: relative;
+        right: 200px;
+    }
+    
+    i {
+        position: relative;
+        left: 250px;
+        margin: 3px;
+        padding: 2px;
+    }
+    
+    div.f1 {
+        position: relative;
+        left: 650px;
+        top: 70px;
+    }
+    
+    p.f2 {
+        position: relative;
+        right: 200px;
+        font-size: large;
+    }
+    
+    button.f3 {
+        position: relative;
+        right: 225px;
+        background-color: orange;
+        width: 450px;
+        margin: 6px;
+        padding: 8px;
+        border: 1.5px solid orangered
+    }
+    
+    .line1 {
+        position: relative;
+        top: 100px;
+        background-color: #2e2e4c;
+        color: white;
+        padding: 40px;
+    }
+    
+    .line1 h2 {
+        position: relative;
+        left: 30px;
+        bottom: 30px;
+        text-align: center;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .line2 {
+        text-align: center;
+        position: relative;
+        top: 130px;
+        left: 255px;
+    }
+    
+    .im1 {
+        position: relative;
+        top: 170px;
+        left: 500px;
+        /* background-color: aqua; */
+        height: 90vh;
+        width: 300px;
+        box-shadow: 0 5px 5px 1px rgb(62, 61, 61);
+        text-align: center;
+    }
+    
+    .im1 img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .im2 {
+        position: relative;
+        top: 170px;
+        left: 500px;
+        /* background-color: aqua; */
+        height: 90vh;
+        width: 300px;
+        box-shadow: 0 5px 5px 1px rgb(62, 61, 61);
+        text-align: center;
+    }
+    
+    .im2 img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .im3 {
+        position: relative;
+        top: 170px;
+        left: 500px;
+        height: 90vh;
+        width: 300px;
+        box-shadow: 0 5px 5px 1px rgb(62, 61, 61);
+        text-align: center;
+    }
+    
+    .im3 img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .b2 {
+        position: relative;
+        top: 200px;
+        left: 410px;
+        background-color: orange;
+        width: 450px;
+        margin: 6px;
+        padding: 8px;
+        border: 1.5px solid orangered
+    }
+    
+    .line3 {
+        position: relative;
+        top: 250px;
+        left: 550px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        /* text-align: center; */
+    }
+    
+    .d1 {
+        position: relative;
+        top: 300px;
+        left: 250px;
+        background-color: #787886;
+        width: 800px;
+        height: 70px;
+        border: 2px solid rgb(30, 30, 67);
+    }
+    
+    .d1 p {
+        font: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 90px;
+    }
+    
+    .d2 {
+        position: relative;
+        top: 325px;
+        left: 250px;
+        background-color: #787886;
+        width: 800px;
+        height: 70px;
+        border: 2px solid rgb(30, 30, 67);
+    }
+    
+    .d2 p {
+        font: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 90px;
+    }
+    
+    .d3 {
+        position: relative;
+        top: 350px;
+        left: 250px;
+        background-color: #787886;
+        width: 800px;
+        height: 70px;
+        border: 2px solid rgb(30, 30, 67);
+    }
+    
+    .d3 p {
+        font: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 90px;
+    }
+    
+    .d4 {
+        position: relative;
+        top: 375px;
+        left: 250px;
+        background-color: #787886;
+        width: 800px;
+        height: 70px;
+        border: 2px solid rgb(30, 30, 67);
+    }
+    
+    .d4 p {
+        font: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 90px;
+    }
+    
+    .d5 {
+        position: relative;
+        top: 400px;
+        left: 250px;
+        background-color: #787886;
+        width: 800px;
+        height: 70px;
+        border: 2px solid rgb(30, 30, 67);
+    }
+    
+    .d5 p {
+        font: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 90px;
+    }
+    
+    .d6 {
+        position: relative;
+        top: 425px;
+        left: 250px;
+        background-color: #787886;
+        width: 800px;
+        height: 70px;
+        border: 2px solid rgb(30, 30, 67);
+    }
+    
+    .d6 p {
+        font: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 90px;
+    }
+    
+    .b3 {
+        position: relative;
+        top: 450px;
+        left: 410px;
+        background-color: orange;
+        width: 450px;
+        margin: 6px;
+        padding: 8px;
+        border: 1.5px solid orangered
+    }
+    
+    .d1:hover {
+        background-color: #0a0a22;
+        color: white;
+    }
+    
+    .d2:hover {
+        background-color: #0a0a22;
+        color: white;
+    }
+    
+    .d3:hover {
+        background-color: #0a0a22;
+        color: white;
+    }
+    
+    .d4:hover {
+        background-color: #0a0a22;
+        color: white;
+    }
+    
+    .d5:hover {
+        background-color: #0a0a22;
+        color: white;
+    }
+    
+    .d6:hover {
+        background-color: #0a0a22;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <nav class="header">
+
+                <!-- <i class="fa-solid fa-magnifying-glass"> -->
+                <input type="text" placeholder="search 10000+ tutorial" class="s1">
+                <h1>freeCodeCamp</h1>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-regular fa-user"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="f1">
+            <h1>Learn to code-for free.</h1><br>
+            <h1>Build project.</h1><br>
+            <h1>Earn certification.</h1><br>
+            <p class="f2">since 2014,more than 40,000 freecodecamp.org<br>graduate have gotten jobs at tech companies including</p><br>
+            <button class="f3">Get started(it's free)</button><br>
+        </div><br>
+        <div class="line1">
+            <h2>As seen in:</h2>
+        </div>
+        <div class="line2">
+            <h1>here is what our alumni say about</h1>
+            <h1>freeCodeCamp:</h1>
+        </div>
+        <div class="im1"><img src="download (1).jpeg"><strong>Shwan Wang</strong> in Singapore<br>Software Engineer at <b>Amazon</b><br><br>"It's scary to change careers. I only gained confidence that I could code by working through the hundreds of hours of free lessons
+            on freeCodeCamp. Within a year I had a six-figure job as a Software Engineer. <b>freeCodeCamp changed my life."</b>
+        </div>
+        <br><br><br>
+        <div class="im2"><img src="download.jpeg"><b>Sarah Chima</b> in Nigeria<br> Software Engineer at <b>ChatDesk</b><br><br> <b>"freeCodeCamp was the gateway to my career</b> as a software developer. The well-structured curriculum took my coding knowledge from a total
+            beginner level to a very confident level. It was everything I needed to land my first dev job at an amazing company."
+        </div>
+        <br><br><br>
+        <div class="im3"><img src="images (1).jpeg"><b>Emma Bostian</b><br> in Sweden Software Engineer at<br> <b>Spotify</b><br><br> "I've always struggled with learning JavaScript. I've taken many courses but freeCodeCamp's course was the one which stuck. Studying JavaScript
+            as well as data structures and algorithms on freeCodeCamp gave me the skills and confidence I needed to land my dream job as a software engineer at Spotify."
+        </div>
+        <button class="b2">Get started(it's free)</button><br>
+        <div class="line3">
+            <h1>Earn free verified certification with<br> freeCodeCamp's core curriculum:</h1>
+        </div><br>
+        <div id="lines">
+            <div class="d1">
+                <p> Responsive Web Design Certification</p>
+            </div>
+            <div class="d2">
+                <p> JavaScript Algorithms and Data Structures (Beta) Certification</p>
+            </div>
+            <div class="d3">
+                <p> Front End Development Libraries Certification</p>
+            </div>
+            <div class="d4">
+                <p>Relational Database Certification</p>
+            </div>
+            <div class="d5">
+                <p>Information Security Certification</p>
+            </div>
+            <div class="d6">
+                <p>Data Analysis with Python Certification</p>
+            </div>
+        </div>
+        <button class="b3">Get started(it's free)</button>
+
+    </main>
+</body>
+
+</html>
